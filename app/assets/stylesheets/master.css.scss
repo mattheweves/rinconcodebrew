@@ -1,3 +1,5 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300);
+
 .clear {
 	clear:both;
 }
@@ -36,6 +38,7 @@
 	color:black;
 	font-size: 25px;
 	border-bottom: 1px solid #dfdfdf;
+	font-family: 'cantarellbold';
 }
 
 header {
@@ -45,3 +48,16 @@ header {
 hr {
 	clear:both;
 }
+
+h1 {
+	font-family: 'cantarellregular';
+	font-size: 48px;
+}
+
+h2 {
+	font-family: 'cantarellbold';
+	font-style: italic;
+}
+
+
+
