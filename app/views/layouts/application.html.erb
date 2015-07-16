@@ -17,22 +17,34 @@
 			 <br />
 				When?!
 		</div>
-
-
 		</div>
 		<div class="col-xs-4 slogan">
 			Splurting out crazy facts about animals and extinction as of the year 2015
 		</div>
 		<div class="col-xs-5 links">
-			<%= link_to 'Contribute', '#' %>
-			<%= link_to 'About', '#' %>
+			<%= link_to 'CONTRIBUTE', '#' %>
+			<%= link_to 'ABOUT', '#' %>
 		</div>
 	</header>
 	<hr />
 
 	<br class="clear" />
 
-<%= yield %>
+	<div class="container">
+		<%= yield %>
+	</div>
+
+	<div class="footer">
+		<div class="container">
+			<div class="col-xs-6">
+				<%= link_to "This isn't enough, I need more", "#" , :class => 'next-quote' %>
+			</div>
+			<div class="col-xs-6 footer-blurb">
+				Proudly hacked in Carpinteria, CA by <a href="https://github.com/mattheweves">Matt Eves</a><br />
+				Want to build your own Splurty Web App - <a href="http://thefirehoseproject.com">Learn how to code here</a>
+			</div>
+		</div>
+	</div>
 
 </body>
 </html>
