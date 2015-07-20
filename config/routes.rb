@@ -15,7 +15,7 @@ Splurty::Application.routes.draw do
   #   resources :products
 
   # Example resource route with options:
-  #   resources :products do
+  #   resources :products 
   #     member do
   #       get 'short'
   #       post 'toggle'
@@ -34,7 +34,7 @@ root 'quotes#index'
   #     resource :seller
   #   end
   resources :quotes
-    
+
   # Example resource route with more complex sub-resources:
   #   resources :products do
   #     resources :comments
