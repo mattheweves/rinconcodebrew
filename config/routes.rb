@@ -26,12 +26,15 @@ Splurty::Application.routes.draw do
   #     end
   #   end
 root 'quotes#index'
+
+
   # Example resource route with sub-resources:
   #   resources :products do
   #     resources :comments, :sales
   #     resource :seller
   #   end
-
+  resources :quotes
+    
   # Example resource route with more complex sub-resources:
   #   resources :products do
   #     resources :comments

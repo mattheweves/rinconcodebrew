@@ -9,20 +9,22 @@
 <body>
 	<header>
 		<div class="col-xs-3">
-		 <div class="circle">
+		 <%= link_to root_path, :class => 'logo' do %>
+		 	<div class="circle">
  			 <br />
   				What?
-  			 <br />
+			 <br />
 				Extinct
 			 <br />
 				When?!
-		</div>
+			</div>
+		  <% end %>
 		</div>
 		<div class="col-xs-4 slogan">
 			Splurting out crazy facts about animals and extinction as of the year 2015
 		</div>
 		<div class="col-xs-5 links">
-			<%= link_to 'CONTRIBUTE', '#' %>
+			<%= link_to 'CONTRIBUTE', new_quote_path %>
 			<%= link_to 'ABOUT', '#' %>
 		</div>
 	</header>
@@ -37,7 +39,7 @@
 	<div class="footer">
 		<div class="container">
 			<div class="col-xs-6">
-				<%= link_to "This isn't enough, I need more", "#" , :class => 'next-quote' %>
+				<%= link_to "This isn't enough, I need more", root_path , :class => 'next-quote' %>
 			</div>
 			<div class="col-xs-6 footer-blurb">
 				Proudly hacked in Carpinteria, CA by <a href="https://github.com/mattheweves">Matt Eves</a><br />

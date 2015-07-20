@@ -46,4 +46,7 @@ end
 
 # For Bootstrap 3.0
 gem 'bootstrap-sass', '~> 3.3.4'
+# Forms
+gem 'simple_form'
+
 
