@@ -34,6 +34,7 @@ root 'quotes#index'
   #     resource :seller
   #   end
   resources :quotes
+  get 'about', :to => 'quotes#about'
 
   # Example resource route with more complex sub-resources:
   #   resources :products do
