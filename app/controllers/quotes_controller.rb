@@ -6,8 +6,9 @@ class QuotesController < ApplicationController
   	def create
   	   @quote = Quote.create(quote_params)
   	   if @quote.invalid?
-  	   		flash[:error] = '<strong>Could not save</strong> the data you entered is invalid.'
-  	   	end
+  	   		flash[:error] = '<strong>Could not save</strong> because the data you entered is invalid.'
+  	   	  flash[:hint] = 'Hint: Quotes are limited to 250 characters, and you can count your characters here <a target="_blank" class="links" href="http://www.charactercountonline.com">Character Counter</a>.'
+        end
   	   redirect_to root_path
   	end
 
